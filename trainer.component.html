@@ -1,0 +1,28 @@
+<html>
+<body>
+    <div id="addworkoutModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form [formGroup]="form">
+                    <div class="modal-header">
+                        <h4 class="modal-title">ADD TRAINER</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Trainer Name</label>
+                            <input type="text" formControlName="trainer" class="form-control" required>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Back">
+                        <input type="submit" (click)="insertTrainer()" class="btn btn-success" value="Add">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

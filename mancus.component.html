@@ -1,0 +1,32 @@
+<html>
+
+<body>
+    <div id="addworkoutModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form [formGroup]="form">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Delete Customer</h4>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label for="">User name</label>
+                            <select name="" id="" class="form-control" formControlName="userName">
+                                <option *ngFor="let customer of customers" value={{customer.firstname}}>
+                                    {{customer.firstname}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Back">
+                        <input type="submit" (click)="deleteCus()" class="btn btn-success" value="Delete">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

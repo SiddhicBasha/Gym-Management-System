@@ -1,0 +1,31 @@
+<html>
+<body>
+    <div class="box-form">
+        <div class="right">
+            <h5>Update</h5>
+            <form class="inputs">
+                <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}"
+                    placeholder="Password">
+                <br>
+                <br>
+                <input type="text" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" placeholder="Email">
+                <br>
+                <br>
+                <input type="number" [(ngModel)]="mobile" [ngModelOptions]="{standalone: true}"
+                    placeholder="Mobile no.">
+                <br>
+                <br>
+                <br>
+                <div class="remember-me--forget-password">
+                    <ul>
+                        <li class="main-button"><button (click)="save()">update</button></li><br><br>
+                        <li class="main-button"><button (click)="clearFields()">Clear</button></li>
+                    </ul>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

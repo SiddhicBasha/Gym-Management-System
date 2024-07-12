@@ -1,0 +1,116 @@
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/gym-login.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;
+}
+
+.box-form {
+    margin: fill;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-form .left {
+    color: #cccfd0;
+    overflow: hidden;
+    top: 50px;
+    left: 4px;
+    width: 50%;
+    height: 100%;
+}
+
+.box-form .left .overlay {
+    padding: 100px;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box-form .left .overlay h1 {
+    font-size: 8vmax;
+    line-height: 1;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.box-form .left .overlay h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.box-form .right {
+    color: #d8dde0;
+    padding: 80px;
+    overflow: hidden;
+}
+
+.box-form .right h5 {
+    font-size: 6vmax;
+    line-height: 0;
+}
+
+.box-form .right p {
+    font-size: 14px;
+    color: #e1d9d9;
+}
+
+.box-form .right .inputs {
+    overflow: hidden;
+}
+
+.box-form .right input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #0ac2df;
+}
+
+
+.main-button button {
+    display: inline-block;
+    font-size: 13px;
+    padding: 12px 20px;
+    background-color: #17cae9;
+    ;
+    border-radius: 17px;
+    color: #f4efef;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.main-button a:hover {
+    background-color: #87beea;
+}
+
+
+label {
+    display: block;
+    position: relative;
+    margin-left: 30px;
+}

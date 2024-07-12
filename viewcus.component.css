@@ -1,0 +1,44 @@
+/* Style the table */
+html,body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/assets/viewcus.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #f9f5f5;
+  }
+  
+  /* Style table header */
+  th {
+    background-color: #f2f2f2;
+    color: #111010;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Style table rows */
+  tr:nth-child(even) {
+    background-color: #4b2e2e;
+    color: #ddd;
+  }
+  
+  /* Style table data cells */
+  td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    color: #f2f2f2;
+  }
+  
+  /* Hover effect on rows */
+  tr:hover {
+    background-color: #ddd;
+  }
+  

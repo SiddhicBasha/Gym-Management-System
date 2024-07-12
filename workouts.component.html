@@ -1,0 +1,62 @@
+<html>
+<body>
+    <div id="addworkoutModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form [formGroup]="form">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Choose Workout</h4>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label for="">User name</label>
+                            <select name="" id="" class="form-control" formControlName="userName">
+                                <option *ngFor="let customer of customers" value={{customer.firstname}}>
+                                    {{customer.firstname}}</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Trainer name</label>
+                            <select name="" id="" class="form-control" formControlName="trainerName">
+                                <option *ngFor="let trainer of trainers" value={{trainer.trainerName}}>
+                                    {{trainer.trainerName}}</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label>Target</label>
+                            <input type="text" formControlName="wrtype" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Workout Name</label>
+                            <input type="text" formControlName="wrname" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Sets</label>
+                            <input type="number" formControlName="sets" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Reps</label>
+                            <input type="number" formControlName="reps" class="form-control" required>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                      <button (click)="clearFields()">Clear</button>
+                        <input type="submit" (click)="insertWorkout()" class="btn btn-success" value="Add">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/update.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  /* Form container */
+  .box-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Set minimum height for full viewport */
+    /* background-color: #110b0b; Light background color */
+  }
+  
+  /* Form section */
+  .right {
+    width: 400px; /* Set a fixed width for the form */
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 70px; /* Add subtle rounded corners */
+    background-color: rgba(241, 235, 235, 0.5);/* White background for the form */
+
+  }
+  
+  /* Form heading */
+  h5 {
+    font-size: 3vmax;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-bottom: 50px; /* Add space below the heading */
+  }
+  
+  /* Input fields */
+  .inputs input {
+    display: block; /* Ensure inputs take up full width */
+    width: 80%; /* Match the form section width */
+    padding: 10px 15px; /* Add padding for readability */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 3px; /* Rounded corners for inputs */
+    margin-bottom: 10px; /* Add space between inputs */
+  }
+  
+  /* Input placeholders */
+  .inputs input::placeholder {
+    color: #999; /* Gray placeholder text */
+  }
+  
+  /* Update button */
+  .remember-me--forget-password button {
+    background-color: #3498db; /* Blue button color */
+    color: #fff; /* White button text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px; /* Consistent rounded corners */
+    cursor: pointer; /* Indicate clickable button */
+  }
+  
+  .remember-me--forget-password button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
